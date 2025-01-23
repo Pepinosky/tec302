@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {	
+	font-family: "Lato", sans-serif;
+	
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+/*standard design for buttons*/
+.button{
+    border: round;
+    padding: 12px 28px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 6px;
+    transition-duration: 0.2s;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 10px 18px #888888
+}
+
+/* navigation bar section*/
+.logo{
+ width: 80px;
+ padding: 4px;
+}
+.navbar{
+ display: flex;
+ height: 70px;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center; 
+ background-color: #f8f8ff;
+}
+
+.navigation{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navigation a{
+    display: block;
+    transition-duration: 0.2s;
+    padding: 1em;
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    
+    border-bottom: 1px black solid;
+    color: grey;
+    font-size: 15px;
+   
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon{
+    color: #000000;
+    font-size: 30px;
+}
+
+/* navigation bar for mobile phone*/
+@media (max-width:600px) { 
+
+    .navigation{  
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ffffff;
+        gap: 0;
+        overflow: hidden;
+        
+    }
+    .navigation li{
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    #menu-list{
+        transition: all 0.5s;
+    }
+
+  
+}
+
+
+/* end of navigation bar */
+
+
+/* homepage */
+.welcome-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("electronics-care-home-appliance-store-thumbnail.jpg.webp");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);;
+    text-align: center;
+ 
+}
+
+.welcome-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18em 2em;    
+    color: white;
+}
+
+.welcome-container h1, h2{
+   text-transform: uppercase;
+   margin-bottom: 16px;
+}
+
+.welcome-container a{
+    margin-top: 3em;
+    text-decoration: none;
+    width: 10%;
+}
+
+.welcome-container a:hover{
+    width: 15%;
+
+}
+
+.feature-section{
+   margin: 0 auto; /* center the content for feature products*/
+   width: 100%;
+}
+
+.feature-section h3{
+    text-transform: uppercase;
+    font-size: 2em;  
+    
+}
+
+.feature-section b{
+    color: burlywood
+}
+
+.feature-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10em;
+    text-align: left;
+    margin-right: 3em;
+    gap: 20px;
+    
+}
+
+.feature-desc{
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #ffffff;  
+    float: left;
+    width: 100%; 
+}
+
+.feature-desc p{
+    text-align: justify;
+    letter-spacing: 4px; 
+}
+
+.feature-desc a {
+    font-size: large;
+    color: black;  
+    transition-duration: 0.2s;
+}
+
+.feature-desc a:hover{
+  color: grey;
+}
+
+.feature-image img{
+   width: 40em;
+   height: auto;
+   border-radius: 10px;
+}
+.product-description{
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .button{
+        border-radius: 0;
+        border-bottom: 1px black solid;
+    }
+
+    .welcome-section{
+       background-image: none;
+    }
+    .welcome-container{
+        color: black;
+        padding: 2em;
+    }
+    .welcome-container a{
+        width: 20%;
+    }
+    .welcome-container a:hover{
+        width: 25%;
+    
+    }
+    .feature-container{
+       border-top: 1px black solid;
+        padding: 2em;
+        text-align: center;
+        margin-right: 0em;    
+    }
+    .feature-desc a {
+        font-size: 20px;
+        color: black;  
+       
+    }
+
+    .feature-image{
+        display: none;
+    }
+
+
+}
+
+
+
+
+/* end of desc*/
+
+.contact-container{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+	height: auto;
+   
+}
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+.contact-content h4, p{
+    padding-top: 10px;
+}
+.email{
+ border: none;
+ width: 80%;
+ padding: 10px 20px;
+ margin: 8px 0px;
+ border-bottom: 1px black solid;
+}
+
+
+
+
+
+
+.newsletter-section{
+    display: block;
+}
+
+.newsletter-container{
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+/*end of homepage */
+
+/*shop*/
+.categories-container{
+    display: block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 0em;
+    background-color: #FFFAF1;
+}
+
+.categories-content{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+
+    margin: 0 auto;
+    gap: 10px;
+    
+}
+.categories-content li{
+    display: flex;
+    width: 80%;
+    margin: 2em;
+    padding: 1em;
+    height: auto;
+    border-radius: 4px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    border: 1px black solid;
+    
+}
+
+.categories-container li:hover{
+    box-shadow: 1px 2px;
+    padding: 0px 2px;
+    border: 1px black solid;
+
+}
+
+.categories-content a:hover{
+    text-decoration: underline;
+}
+
+
+.categories-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+   
+}
+
+.categories-content img {
+    width: 100%; 
+    height: auto;  
+}
+
+.offers-content {
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.offers-content div{     /* make each offer content a column  */
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+.offers-sale, .offers-others, .offers-explore{
+    display: flex;
+    padding: 6em;
+    gap: 20px;
+    transition-duration: 0.5s;
+}
+.offers-sale, .offers-others, .offers-explore p{
+    text-align: center;
+}
+
+.offers-content [type="button"]{
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px black solid;
+}
+
+.offers-content div:hover, [type="button"]:hover{
+   background-color: black;
+   color: white;
+   border: 1px white solid;
+   font-size: 18px;
+}
+
+@media (max-width:600px){
+    .categories-container{
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        margin-top: 1em; 
+    }
+    .categories-container img{
+        width: 80%;
+    }
+    .categories-content{
+        
+        flex-wrap: wrap;
+    
+    }
+    .categories-content li{
+        display: flex;
+        border: 1px black solid;
+        width: 20%;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0px;      
+    }
+    .offers-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+
+
+
+
+
+
+/*end of shop*/
+
+/*About */
+
+
+.about{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;  
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.about h1{
+    padding-top: 2em;
+    font-size: 40px;
+}
+
+.about b{
+    color: burlywood;
+}
+
+.about p{
+    padding-top: 2em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.list{
+    padding-top: 1em;
+}
+
+.about a{
+    
+    letter-spacing: 2px;
+}
+
+.about a:visited{
+    color: black;
+    
+}
+
+
+.about a:hover{
+    color: grey;
+}
+
+.about-form{
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.about-form:hover{
+    box-shadow: 1px 2px 1px 2px rgb(205, 205, 205);
+}
+.about-form h2,h3{
+    padding: 12px 16px;
+    letter-spacing: 2px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-content [type="text"]{
+    border-style: none;
+    border-bottom: 1px black solid;
+    padding: 12px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.checkbox-container{
+    padding-top: 12px;
+    cursor: pointer;   
+}
+
+@media (max-width:600px){
+    .about{     
+        width: 100%;  
+        padding: 0px;
+        margin-top: 0px;
+      }
+}
+/*end of about*/

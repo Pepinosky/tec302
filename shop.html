@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>       
+        <nav id="navbar" class="navbar">  
+            <a href="#" class="logo"><img src="ecommerce-logo.png" alt="logo" class="logo"></a>            
+            <ul class="navigation" id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <section  class="categories-container">
+            <h2>Shop by category</h2>
+         <ul class="categories-content">
+            <li><a href=""><img src="ipad.png" alt="Mobile phones">Mobile phones</a></li>
+            <li><a href=""><img src="computer.png" alt="Computers">Computers</a> </li>
+            <li><a href=""><img src="tv.png" alt="TV">TV</a> </li>
+            <li><a href=""><img src="appliances.png" alt="Home appliances">Home appliances</a></li>
+            <li><a href=""><img src="smart.png" alt="Smart home">Smart home</a></li>
+            <li><a href=""><img src="gaming.png" alt="Gaming">Gaming</a></li>
+         </ul>  
+    
+        </section>
+    </header>
+    
+    <section  class="offers-container">
+      <div class="offers-content">
+        <div class="offers-sale">
+           <p>Ongoing <b>SALE. 50% OFF</b> </p> 
+            <input type="button" id="button-browse" class="button" value="Browse">
+        </div>
+        <div class="offers-others" >
+            <p>Other offers</p>
+            <input type="button" id="button-read-more" class="button" value="Read more">
+        </div>
+        <div  class="offers-explore">
+            <p>Best Selling products</p>
+            <input type="button" id="button-explore" class="button" value="Explore">
+        </div>
+    </div>
+    </section>
+
+ <footer>
+    @Fake e-commerce - very good offers 
+ </footer>
+ <script src="code.js"></script>
+     <script src="https://kit.fontawesome.com/dde43273f4.js" crossorigin="anonymous"></script>
+</body>
+</html>

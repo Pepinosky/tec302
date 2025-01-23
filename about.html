@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>       
+        <nav id="navbar" class="navbar">  
+            <a href="#" class="logo"><img src="ecommerce-logo.png" alt="logo" class="logo"></a>            
+            <ul class="navigation" id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <section class="about">
+            <h1>My name is <b>Alonso Astorga</b></h1>
+            <p> This is just a prototype for a e-commerce 
+                website that shouldn't exist but now that you are reading this...
+                <i>it does</i>
+            </p>
+            <p>
+               This website is a fake e-commerce and the main purpose is to show some
+               fake content which includes:
+               <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+               <p>
+               The landing page is usually used so users can have a small idea of the business
+               <br>
+               The about page is just to describe the business but in this case I talk about my self
+               <br>
+               The shop just to show the main things the business has to offers and the options to explore
+            </p>
+            </p>
+          </section>
+    </header>
+ 
+  <section class="about-form" id="about-form" >
+    <h2>Suscribe</h2>
+    <h3>To our newsletter</h3>
+    <div class="form-container">
+    <form action="" class="form-content" onsubmit="suscription()" target="_self" >
+     <label for="email">Email</label>
+    <input type="text" placeholder="Your email..." id="email" name="email" required>
+    <label for="name">Name</label>
+    <input type="text" placeholder="Your name" id="name" name="name" required>
+
+    <p> I want to receive: </p>  
+    <label class="checkbox-container" for="news">
+     <input type="checkbox" id="news" name="news" value="news" class="checkbox"> News
+    </label><br>    
+    <label class="checkbox-container" for="offers">
+    <input type="checkbox" id="offers" name="offers" value="offers" class="checkbox">Offers
+    </label><br>
+    <input type="submit" value="Suscribe" class="button">
+    </form>
+
+    <div id="form-message">
+
+    </div>
+
+</div>
+
+  </section>
+
+  <script src="code.js"></script>
+  <script src="https://kit.fontawesome.com/dde43273f4.js" crossorigin="anonymous"></script>
+</body>
+</html>
